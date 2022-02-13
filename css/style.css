@@ -5,13 +5,76 @@
   --text-color-light: #757575;
   --text-color-theme-darc: #ffffff;
   --button-portfolio-color: #f5f4fa;
+  --light-grey-color-section: #f5f4fa;
+  --color-60%fff: rgba(255, 255, 255, 0.6);
+  --box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  --hero-footer-background-color: #2f303a;
+
   --primary-font-family: 'Roboto', sans-serif;
   --secondary-font-family: 'Raleway', sans-serif;
 }
-.body {
+body {
   font-family: var(--primary-font-family);
   color: #212121;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+.logo-web {
+  color: var(--accent-color);
+}
+.logo-studio {
+  color: var(--header-logo-darc-color);
+}
+.footer-logo-studio {
+  color: var(--text-color-theme-darc);
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* =========  END   =========*/
+/* ========= START HEADER ========= */
+
 .nav-list-link {
   font-weight: 500;
   font-size: 14px;
@@ -38,6 +101,29 @@
 .contact-mailto:focus {
   color: var(--accent-color);
 }
+
+.title-img {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.header {
+  background: var(--text-color-theme-darc);
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+/* ========= END HEADER ========= */
+
 /* ========= START COMPONENTS ========= */
 .logo {
   font-family: var(--secondary-font-family);
@@ -45,31 +131,6 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-
-  /*position: absolute;
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 24px;*/
-}
-.logo-web {
-  color: var(--accent-color);
-}
-.logo-studio {
-  color: var(--header-logo-darc-color);
-}
-.footer-logo-studio {
-  color: var(--text-color-theme-darc);
-}
-.list {
-  list-style: none;
-}
-.link {
-  text-decoration: none;
-}
-
-li {
-  list-style-type: none;
 }
 
 .mobal-btn {
@@ -87,6 +148,7 @@ li {
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  text-align: center;
 }
 
 .mobal-btn:hover,
@@ -103,23 +165,13 @@ li {
   letter-spacing: 0.03em;
 }
 
-.title-img {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
 /* =========  END  COMPONENTS =========*/
 /* ========= START HERO ========= */
+
 .hero {
-  background: #2f303a;
-  /*position: absolute;
-  width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 80px;*/
+  background-color: var(--hero-footer-background-color);
 }
+
 .main-title {
   font-weight: 900;
   font-size: 44px;
@@ -131,12 +183,6 @@ li {
 }
 /* ========= END HERO ========= */
 /* ========= START ABOUT ========= */
-/*.about {*/
-/*position: absolute;
-  width: 1170px;
-  height: 386px;
-  left: 215px;
-  top: 969px;*/
 
 .specifics-theme {
   font-weight: 700;
@@ -155,39 +201,32 @@ li {
 
 /* ========= END TEAM ========= */
 .section-our-team {
-  /*position: absolute;
-width: 1600px;
-height: 648px;
-left: 0px;
-top: 1449px;*/
-  background: #f5f4fa;
+  background: var(--button-portfolio-color);
 }
 /* ========= END TEAM ========= */
 /* ========= START FOOTER ========= */
 .footer {
-  /*position: absolute;
-width: 1600px;
-height: 252px;
-left: 0px;
-top: 2097px;*/
-  background: #2f303a;
+  background: var(--hero-footer-background-color);
 }
+.footer-address {
+  font-family: var(--primary-font-family);
+  font-style: normal;
+}
+
 .address-houce {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--text-color-theme-darc);
+  color: var(--button-portfolio-color);
 }
-.address-mailto-phone {
+
+.address-mailto,
+.addres-phone {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
   color: rgba(255, 255, 255, 0.6);
 }
 /* ========= END FOOTER ========= */
 /* ==========START  PORTFOLIO ========== */
-/*.portfolio {
-}*/
 
 .portfolio-filter-btn {
   background: var(--button-portfolio-color);
